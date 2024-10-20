@@ -32,9 +32,7 @@ public class AfishaManager {
     //adding new film
     public void add(AfishaFilm film) {
         AfishaFilm[] tmp = new AfishaFilm[films.length + 1];
-        for (int i = 0; i < films.length; i++) {
-            tmp[i] = films[i];
-        }
+        System.arraycopy(films, 0, tmp, 0, films.length);
         tmp[tmp.length - 1] = film;
         films = tmp;
     }
