@@ -58,7 +58,6 @@ public class AfishaManager {
             result[i] = all[films.length - 1 - i];
         }
         // в обратном порядке
-        films = result;
-        return films;
+        return result;
     }
 }

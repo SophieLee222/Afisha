@@ -57,7 +57,7 @@ public class AfishaManagerTest {
         manager.findLast();
 
         AfishaFilm[] expected = {film7, film6, film5, film4, film3};
-        AfishaFilm[] actual = manager.getFilms();
+        AfishaFilm[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -76,7 +76,7 @@ public class AfishaManagerTest {
         manager.findLast();
 
         AfishaFilm[] expected = {film7, film6, film5};
-        AfishaFilm[] actual = manager.getFilms();
+        AfishaFilm[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -92,7 +92,7 @@ public class AfishaManagerTest {
         manager.findLast();
 
         AfishaFilm[] expected = {film4, film3, film2, film1};
-        AfishaFilm[] actual = manager.getFilms();
+        AfishaFilm[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
